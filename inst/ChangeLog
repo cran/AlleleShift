@@ -1,0 +1,13 @@
+
+AlleleShift versions
+
+	The suggested citation while the manuscript is submitted and reviewed: 
+	Kindt, R. 2021 (preprint). AlleleShift: An R package to predict and visualize 
+	population-level changes in allele frequencies in response to climate change.
+	doi: https://doi.org/10.1101/2021.01.15.426775
+
+
+Version 0.9 (January 2021)
+
+	* Package developed and submitted to CRAN
+
