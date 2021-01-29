@@ -7,6 +7,12 @@ AlleleShift versions
 	doi: https://doi.org/10.1101/2021.01.15.426775
 
 
+Version 0.9-1 (29 January 2021)
+
+	* Moved 'amova.rda()' examples to 'dontrun' (example runs fine on a local
+	machine). 
+
+
 Version 0.9 (January 2021)
 
 	* Package developed and submitted to CRAN

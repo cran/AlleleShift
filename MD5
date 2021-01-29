@@ -1,4 +1,4 @@
-af376b892d893c725c977586b797ead3 *DESCRIPTION
+f7b63ae3723a2e88c69060cfdd8fcc96 *DESCRIPTION
 673a8b7a58f1f8c7a3bf15bea44357f6 *NAMESPACE
 0552f0b01cdab1393b74454ef0f043e1 *R/VIF.subset.R
 dbe3020a954e819986a1a908373db54c *R/amova.rda.R
@@ -12,7 +12,7 @@ ed4604e7b5ccd1427376f975507f8109 *R/shift.surf.ggplot.R
 0daa78e6f82bdf6232e5eb822b42955e *R/shift.waffle.ggplot.R
 d390a2c2c16a22ed5ff23673a0fb7326 *R/zzz.R
 2ead97af744a5ecd95ff5186109c8343 *README.md
-5a5a026d5f63b99255d5408253990af8 *build/partial.rdb
+cd08482e411b161d65e83774f17183d5 *build/partial.rdb
 5062a18598eadb634848fd7af9f8545f *data/Poptri.1985to2085.RData
 c793d3911e0922c24a3da6baf8605a83 *data/Poptri.baseline.env.RData
 e5dd5c66014b7c22c97f55f8ae2cbdfa *data/Poptri.freq.baseline.RData
@@ -21,10 +21,10 @@ e5dd5c66014b7c22c97f55f8ae2cbdfa *data/Poptri.freq.baseline.RData
 602c000259ca7b7d97b0fc04b26ae268 *data/Poptri.genind.RData
 3f6ab726d6fb32f53f6c0d7a274838c6 *data/Poptri.loc.RData
 b9433008add1569302ee0b3c009cd878 *inst/CITATION
-8f76e43ffbf1b4381661cc000aae1273 *inst/ChangeLog
+136dbd3109f94cb37040adac63b5715c *inst/ChangeLog
 0f1acde8f25278c99e8225c860a61617 *man/Poptri.genind.Rd
 115306093deb292462cbbd8e50a85138 *man/VIF.subset.Rd
-5020859993d38fb2b2f3d3a6bfd7cf0b *man/amova.rda.Rd
+a4ca07113b2229b95b645caaac0ee760 *man/amova.rda.Rd
 27320e1f983b6d377d2dc721bb9bcd7f *man/count.model.Rd
 b6565b062953305afc447a80442801ac *man/figures/README-fig1-1.png
 148e2f126c351cd828439fc627b6f304 *man/figures/README-fig1-2.png

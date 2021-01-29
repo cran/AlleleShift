@@ -48,7 +48,7 @@ Peakall R and Smouse PE. 2012. GenAlEx 6.5: genetic analysis in Excel. Populatio
 
 \examples{
 
-\donttest{
+\dontrun{
 
 library(poppr)
 library(BiodiversityR) # also loads vegan
