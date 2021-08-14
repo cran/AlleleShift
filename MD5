@@ -1,4 +1,4 @@
-c2149ca84aee0b3decb124fa384eef08 *DESCRIPTION
+89f57a7a6dc2c8d7dac81268ba07b34e *DESCRIPTION
 62c269065b755446d6a08ae7e07c0168 *NAMESPACE
 0552f0b01cdab1393b74454ef0f043e1 *R/VIF.subset.R
 dbe3020a954e819986a1a908373db54c *R/amova.rda.R
@@ -11,9 +11,9 @@ f424330570859fcb352b287d73c6832d *R/population.shift.R
 d4ef4a46644cb7b59d672849a5847330 *R/shift.pie.ggplot.R
 ed4604e7b5ccd1427376f975507f8109 *R/shift.surf.ggplot.R
 c6aa0ef2a917da7c193316f030aa44eb *R/shift.waffle.ggplot.R
-d390a2c2c16a22ed5ff23673a0fb7326 *R/zzz.R
-2ead97af744a5ecd95ff5186109c8343 *README.md
-db5346cd0f1a7a712f1ae9ec03ef0f27 *build/partial.rdb
+918a7beb6f67774a3cdeac43dd864305 *R/zzz.R
+7b879bb124beeea5cb54b94d715523fc *README.md
+5a31bb149e16a066d7071a9d6c2b061f *build/partial.rdb
 5062a18598eadb634848fd7af9f8545f *data/Poptri.1985to2085.RData
 c793d3911e0922c24a3da6baf8605a83 *data/Poptri.baseline.env.RData
 e5dd5c66014b7c22c97f55f8ae2cbdfa *data/Poptri.freq.baseline.RData
@@ -21,12 +21,12 @@ e5dd5c66014b7c22c97f55f8ae2cbdfa *data/Poptri.freq.baseline.RData
 0d207c6a445ced37b099c2ab680197f5 *data/Poptri.future.env.RData
 602c000259ca7b7d97b0fc04b26ae268 *data/Poptri.genind.RData
 3f6ab726d6fb32f53f6c0d7a274838c6 *data/Poptri.loc.RData
-b9433008add1569302ee0b3c009cd878 *inst/CITATION
-14386dd1c308a7c3bf344f48b7a586bd *inst/ChangeLog
+25a1ef1b8d9e0d9694f3d227c5333f52 *inst/CITATION
+22d260f2cc98fcc2768e635314454939 *inst/ChangeLog
 0f1acde8f25278c99e8225c860a61617 *man/Poptri.genind.Rd
 115306093deb292462cbbd8e50a85138 *man/VIF.subset.Rd
 a4ca07113b2229b95b645caaac0ee760 *man/amova.rda.Rd
-27320e1f983b6d377d2dc721bb9bcd7f *man/count.model.Rd
+6b4bb59d5d283229d8673ffe0b7a464a *man/count.model.Rd
 b6565b062953305afc447a80442801ac *man/figures/README-fig1-1.png
 148e2f126c351cd828439fc627b6f304 *man/figures/README-fig1-2.png
 30ee904b1c7d7f8876be206c2b227862 *man/figures/README-fig1-3.png
@@ -59,5 +59,5 @@ f0e4b957a975cd376bd35c6f514a300d *man/figures/README-unnamed-chunk-4-4.png
 2e53431971e43c8d30a834355365c978 *man/shift.dot.ggplot.Rd
 a75977e18060d5f27371a4df673a0856 *man/shift.moon.ggplot.Rd
 207607e353f94c16a394ecce4075a67c *man/shift.pie.ggplot.Rd
-e1df164c183c3087f7c560f65149f422 *man/shift.surf.ggplot.Rd
+e2ed4d251684db9cc79441d370bd2f7c *man/shift.surf.ggplot.Rd
 f0cf796a8e42cceca0aeb8ae79b062d0 *man/shift.waffle.ggplot.Rd

@@ -1,10 +1,24 @@
 
 AlleleShift versions
 
-	The suggested citation while the manuscript is submitted and reviewed: 
-	Kindt, R. 2021 (preprint). AlleleShift: An R package to predict and visualize 
-	population-level changes in allele frequencies in response to climate change.
-	doi: https://doi.org/10.1101/2021.01.15.426775
+	The suggested citation of the package is:
+
+	Kindt R. 2021. AlleleShift: an R package to predict and visualize population-
+	level changes in allele frequencies in response to climate change. 
+	PeerJ 9:e11534 https://doi.org/10.7717/peerj.11534
+
+
+Version 1-0-2 (August 2021)
+
+	* Updated information on citation to the published article in PeerJ
+
+	* Updated the documentation of the shift.surf.ggplot function to a Rpub that
+	shows how a STAMEN baseline map can be used to produce high resolution images 
+	via the ggmap package.
+
+	Kindt R. 2021. Plotting smoothed surface diagrams of allele frequencies 
+	obtained from AlleleShift on a baseline map via ggmap.
+	https://rpubs.com/Roeland-KINDT
 
 
 Version 1.0-1 (25 March 2021)

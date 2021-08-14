@@ -33,6 +33,9 @@ shift.surf.ggplot(freq.future,
 
 \details{
 Populations are plotted in geographical space via ordination plotting methods, which is suitable as fixed coordinate systems are recommended both in ordination diagrams and maps. See Kindt (2020) for alternative methods of generating ordination diagrams via vegan, BiodiversityR and ggplot2.
+
+Kindt (2021) shows how a STAMEN baseline map can be used to produce high resolution images via the ggmap package.
+
 }
 
 
@@ -43,6 +46,9 @@ The function generates a ggplot that depicts changes between baseline and future
 
 \references{
 Kindt R. 2020. Ordination graphs with vegan, BiodiversityR and ggplot2. \url{https://rpubs.com/Roeland-KINDT}
+
+Kindt, R. 2021. Plotting smoothed surface diagrams of allele frequencies obtained
+from AlleleShift on a baseline map via ggmap. \url{https://rpubs.com/Roeland-KINDT}
 }
 
 \author{Roeland Kindt (World Agroforestry, CIFOR-ICRAF)}
@@ -66,14 +72,14 @@ data(Poptri.freq.future)
 # Baseline climate
 plotA <- shift.surf.ggplot(Poptri.freq.future,
                   xcoord="Long", ycoord="Lat",
-                  Allele.focus=unique(Poptri.freq.future$Allele)[1], 
+                  Allele.focus=unique(Poptri.freq.future$Allele)[1],
                   freq.focus="Allele.freq")
 plotA
 
 # Future/past climate
 plotB <- shift.surf.ggplot(Poptri.freq.future,
                   xcoord="Long", ycoord="Lat",
-                  Allele.focus=unique(Poptri.freq.future$Allele)[1], 
+                  Allele.focus=unique(Poptri.freq.future$Allele)[1],
                   freq.focus="Freq.e2")
 plotB
 
@@ -82,14 +88,14 @@ plotB
 # Baseline climate
 plotC <- shift.surf.ggplot(Poptri.freq.future,
                   xcoord="Long", ycoord="Lat",
-                  Allele.focus=unique(Poptri.freq.future$Allele)[5], 
+                  Allele.focus=unique(Poptri.freq.future$Allele)[5],
                   freq.focus="Allele.freq")
 plotC
 
 # Future climate
 plotD <- shift.surf.ggplot(Poptri.freq.future,
                   xcoord="Long", ycoord="Lat",
-                  Allele.focus=unique(Poptri.freq.future$Allele)[5], 
+                  Allele.focus=unique(Poptri.freq.future$Allele)[5],
                   freq.focus="Freq.e2")
 plotD
 
@@ -119,9 +125,9 @@ decades <- sort(unique(future.data$Decade))
 for (d in 1:length(decades)) {
   decade.focal <- decades[d]
   decade.data <- future.data[future.data$Decade == decade.focal, ]
-  plotLONLAT <- vegan::ordiplot(decade.data[, c("xcoord", "ycoord")]) 
+  plotLONLAT <- vegan::ordiplot(decade.data[, c("xcoord", "ycoord")])
   surfAllele <- BiodiversityR::ordisurfgrid.long(vegan::ordisurf(plotLONLAT, y=decade.data$Freq.e2))
-  decade.surf <- cbind(Decade=rep(decade.focal, nrow(surfAllele)), surfAllele)  
+  decade.surf <- cbind(Decade=rep(decade.focal, nrow(surfAllele)), surfAllele)
   if (d == 1) {
     future.surfs <- decade.surf
   }else{
@@ -154,8 +160,8 @@ ggsurf.all <- ggplot(data=future.surfs, group=Decade) +
   coord_fixed()
 
 ggsurf.all
- 
-ggsurf.anim <- ggsurf.all + 
+
+ggsurf.anim <- ggsurf.all +
   transition_states(as.factor(Decade), transition_length = 10, state_length = 100) +
   labs(title = "Decade: {closest_state}s")
 
