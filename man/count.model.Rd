@@ -16,11 +16,11 @@ The functions implement a two-step calibration and prediction process for allele
 count.model(genpop.data, env.data, permutations = 99,
     ordistep = FALSE, cca.model = FALSE)
 
-count.pred(count.model, env.data)
+count.pred(count.modeled, env.data)
 
 freq.model(count.predicted)
 
-freq.pred(freq.model, count.predicted)
+freq.pred(freq.modeled, count.predicted)
 
 freq.ggplot(freq.predicted, plot.best = TRUE, threshold = 0.50,
 	colour.Pop = TRUE, manual.colour.values = NULL,
@@ -36,11 +36,11 @@ freq.ggplot(freq.predicted, plot.best = TRUE, threshold = 0.50,
     \item{ordistep}{ Check the results of  {\link[vegan]{ordistep}}. }
     \item{cca.model}{ Fit a CCA model with the minor allele frequency as in Blumstein et al. 2020. }
 
-    \item{count.model}{ Model fitted by \code{count.model}. }
+    \item{count.modeled}{ Model fitted by \code{count.model}. }
 
     \item{count.predicted}{ Predictions made by \code{count.pred}, expected to be predicted for the baseline climate as a second step in the calibration process. }
 
-    \item{freq.model}{ Model fitted by \code{freq.model}. }
+    \item{freq.modeled}{ Model fitted by \code{freq.model}. }
 
     \item{freq.predicted}{ Allele frequencies predicted by \code{freq.pred}. }
     \item{plot.best}{ Plot the models with highest R2 (\code{TRUE}) or lowest R2 values (\code{FALSE}). }
@@ -69,6 +69,9 @@ The functions enable calibration and prediction of allele frequencies.
 Blumstein et al. 2020. Protocol for Projecting Allele Frequency Change under Future Climate Change at Adaptive-Associated Loci. \doi{10.1016/j.xpro.2020.100061}
 
 Kindt R. 2021. AlleleShift: An R package to predict and visualize population-level changes in allele frequencies in response to climate change. PeerJ 9:e11534. \doi{10.7717/peerj.11534}
+
+Brauer CJ., Sandoval-Castillo J, Gates K et al. 2023, Natural hybridization reduces vulnerability to climate change. Nat. Clim. Chang. 13: 282-289, \doi{10.1038/s41558-022-01585-1}
+
 }
 
 \seealso{

@@ -1,12 +1,17 @@
-citHeader("To cite AlleleShift in publications use:")
 
-citEntry(entry="Article",
-	author = personList(as.person("R. Kindt")),
-	title = "AlleleShift: An R package to predict and visualize population-level changes in allele frequencies in response to climate change",
-	year = "2021",
-	doi = "10.7717/peerj.11534",
-	journal = "PeerJ",
+bibentry(
+  bibtype = "article",
+  title = "AlleleShift: an R package to predict and visualize population-level changes in allele frequencies in response to climate change",
+  volume = "9",
+  pages = "e11534",
+  language = "en",
+  journal = "PeerJ",
+  author = c(
+    person("Roeland", "Kindt")
+  ),
+  year = "2020",
 
-	textVersion =
-	paste("Kindt R. 2021. AlleleShift: an R package to predict and visualize population-level changes in allele frequencies in response to climate change. PeerJ 9:e11534 https://doi.org/10.7717/peerj.11534")
+  mheader = "To cite AlleleShift in publications use:"
 )
+
+

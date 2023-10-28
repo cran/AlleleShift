@@ -4,8 +4,18 @@ AlleleShift versions
 	The suggested citation of the package is:
 
 	Kindt R. 2021. AlleleShift: an R package to predict and visualize population-
-	level changes in allele frequencies in response to climate change. 
+	level changes in allele frequencies in response to climate change.
 	PeerJ 9:e11534 https://doi.org/10.7717/peerj.11534
+
+
+Version 1.1-2 (October 2023)
+
+	* Uploaded a new versions, as AlleleShift was archived because of a ongoing update
+	in BiodiversityR
+
+	* Included a reference to Brauer et al. 2023, Natural hybridization reduces
+	vulnerability to climate change https://doi.org/10.1038/s41558-022-01585-1 as example
+	of application.
 
 
 Version 1.1 (September 2022)
@@ -19,10 +29,10 @@ Version 1-0-2 (August 2021)
 	* Updated information on citation to the published article in PeerJ
 
 	* Updated the documentation of the shift.surf.ggplot function to a Rpub that
-	shows how a STAMEN baseline map can be used to produce high resolution images 
+	shows how a STAMEN baseline map can be used to produce high resolution images
 	via the ggmap package.
 
-	Kindt R. 2021. Plotting smoothed surface diagrams of allele frequencies 
+	Kindt R. 2021. Plotting smoothed surface diagrams of allele frequencies
 	obtained from AlleleShift on a baseline map via ggmap.
 	https://rpubs.com/Roeland-KINDT
 
@@ -32,14 +42,14 @@ Version 1.0-1 (25 March 2021)
 	* Modified functions 'shift.dot.ggplot()' and 'shift.pie.ggplot()' to be able
 	to handle data sets where all allele frequencies change in the same direction.
 
-	* New function 'environmental.novel()' to identify populations with more 
+	* New function 'environmental.novel()' to identify populations with more
 	extreme environmental values under climate change.
 
 
 Version 0.9-1 (29 January 2021)
 
 	* Moved 'amova.rda()' examples to 'dontrun' (example runs fine on a local
-	machine). 
+	machine).
 
 
 Version 0.9 (January 2021)

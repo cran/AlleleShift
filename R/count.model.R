@@ -63,25 +63,25 @@ count.model <- function(
 }
 
 count.pred <- function(
-  count.model, env.data
+  count.modeled, env.data
 )
 {
   predict.rda2 <- utils::getS3method("predict", "rda")
-  comm.pred <- predict.rda2(count.model$rda.model, newdata=env.data)
+  comm.pred <- predict.rda2(count.modeled$rda.model, newdata=env.data)
   comm.pred2 <- comm.pred
-  row.ratios <- count.model$row.ratios
+  row.ratios <- count.modeled$row.ratios
   
   for (i in 1:nrow(comm.pred2)) {comm.pred2[i, ] <- comm.pred[i, ] * row.ratios[i]}
 
-  if (is.null(count.model$cca.model) == FALSE) {
+  if (is.null(count.modeled$cca.model) == FALSE) {
       predict.cca2 <- utils::getS3method("predict", "cca")
-      freq.pred2 <- predict.cca2(count.model$cca.model, newdata=env.data)     
+      freq.pred2 <- predict.cca2(count.modeled$cca.model, newdata=env.data)     
   }
 
-  actual <- count.model$gen.comm
+  actual <- count.modeled$gen.comm
   np <- nrow(actual)
   actual$N <- rowSums(actual) / ncol(actual)
-  gen.freq <- count.model$gen.freq
+  gen.freq <- count.modeled$gen.freq
   
   c.index <- seq(from=1, to=(ncol(actual)-1), by=2) 
 
@@ -97,7 +97,7 @@ count.pred <- function(
                            Ap=comm.pred2[, c.index[c]],
                            Bp=comm.pred2[, c.index[c]+1])
 
-    if (is.null(count.model$cca.model) == FALSE) {
+    if (is.null(count.modeled$cca.model) == FALSE) {
       c1 <- (c+1)/2
       allc.res$Freq.Blumstein <- freq.pred2[, c1]    
     }
@@ -130,10 +130,10 @@ freq.model <- function(
 }
 
 freq.pred <- function(
-  freq.model, count.predicted
+  freq.modeled, count.predicted
 )
 {
-  predsx <- mgcv::predict.gam(freq.model, 
+  predsx <- mgcv::predict.gam(freq.modeled, 
                     newdata=count.predicted,
                     type="response",
                     se.fit=TRUE) 
